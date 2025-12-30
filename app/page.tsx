@@ -30,8 +30,8 @@ export default function Home() {
             {/* Card 1 */}
             <div className="bg-[#d9d9d9] h-120 rounded-lg shadow flex items-end min-w-0">
               <div className="bg-white rounded-lg shadow pl-2.5 pr-2.5 pb-2.5 pt-3 sm:pt-6 m-2.5 w-full h-45 flex flex-col min-w-0">
-                <h2 className="text-[17px] font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
-                <p className="text-[15px] text-[#333] leading-relaxed custom-ellipsis">
+                <h2 className="text-base font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
+                <p className="text-sm text-[#333] leading-relaxed custom-ellipsis">
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
                   turpis molestie, dictum est a, mattis tellus. Sed dignissim, &nbsp;
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
@@ -42,8 +42,8 @@ export default function Home() {
             {/* Card 3 */}
             <div className="bg-[#d9d9d9] h-120 rounded-lg shadow flex items-end min-w-0">
               <div className="bg-white rounded-lg shadow pl-2.5 pr-2.5 pb-2.5 pt-3 sm:pt-6 m-2.5 w-full h-45 flex flex-col min-w-0">
-                <h2 className="text-[17px] font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
-                <p className="text-[15px] text-[#333] leading-relaxed custom-ellipsis">
+                <h2 className="text-base font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
+                <p className="text-sm text-[#333] leading-relaxed custom-ellipsis">
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
                   turpis molestie, dictum est a, mattis tellus. Sed dignissim, &nbsp;
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
@@ -57,8 +57,8 @@ export default function Home() {
             {/* Card 2 */}
             <div className="bg-[#d9d9d9] h-120 rounded-lg shadow flex items-end min-w-0">
               <div className="bg-white rounded-lg shadow pl-2.5 pr-2.5 pb-2.5 pt-3 sm:pt-6 m-2.5 w-full h-45 flex flex-col min-w-0">
-                <h2 className="text-[17px] font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
-                <p className="text-[15px] text-[#333] leading-relaxed custom-ellipsis">
+                <h2 className="text-base font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
+                <p className="text-sm text-[#333] leading-relaxed custom-ellipsis">
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
                   turpis molestie, dictum est a, mattis tellus. Sed dignissim, &nbsp;
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
@@ -69,8 +69,8 @@ export default function Home() {
             {/* Card 4 */}
             <div className="bg-[#d9d9d9] h-120 rounded-lg shadow flex items-end min-w-0">
               <div className="bg-white rounded-lg shadow pl-2.5 pr-2.5 pb-2.5 pt-3 sm:pt-6 m-2.5 w-full h-45 flex flex-col min-w-0">
-                <h2 className="text-[17px] font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
-                <p className="text-[15px] text-[#333] leading-relaxed custom-ellipsis">
+                <h2 className="text-base font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
+                <p className="text-sm text-[#333] leading-relaxed custom-ellipsis">
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
                   turpis molestie, dictum est a, mattis tellus. Sed dignissim, &nbsp;
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
@@ -181,6 +181,11 @@ export default function Home() {
           }
           /* Remove extra margin-top from right column when stacked */
           .custom-gap-mobile-right {
+            margin-top: 0 !important;
+          }
+          /* Remove margin between 2nd and 3rd box (ensure both top and bottom are 0) */
+          .custom-gap-mobile > :nth-child(2) {
+            margin-bottom: -5px !important;
             margin-top: 0 !important;
           }
         }
