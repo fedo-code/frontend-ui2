@@ -26,12 +26,12 @@ export default function Home() {
         {/* Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 md:gap-8 custom-gap-mobile">
             {/* Card 1 */}
             <div className="bg-[#d9d9d9] h-120 rounded-lg shadow flex items-end min-w-0">
               <div className="bg-white rounded-lg shadow pl-2.5 pr-2.5 pb-2.5 pt-3 sm:pt-6 m-2.5 w-full h-45 flex flex-col min-w-0">
-                <h2 className="text-base font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
-                <p className="text-sm text-[#333] leading-relaxed custom-ellipsis">
+                <h2 className="text-[17px] font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
+                <p className="text-[15px] text-[#333] leading-relaxed custom-ellipsis">
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
                   turpis molestie, dictum est a, mattis tellus. Sed dignissim, &nbsp;
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
@@ -42,8 +42,8 @@ export default function Home() {
             {/* Card 3 */}
             <div className="bg-[#d9d9d9] h-120 rounded-lg shadow flex items-end min-w-0">
               <div className="bg-white rounded-lg shadow pl-2.5 pr-2.5 pb-2.5 pt-3 sm:pt-6 m-2.5 w-full h-45 flex flex-col min-w-0">
-                <h2 className="text-base font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
-                <p className="text-sm text-[#333] leading-relaxed custom-ellipsis">
+                <h2 className="text-[17px] font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
+                <p className="text-[15px] text-[#333] leading-relaxed custom-ellipsis">
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
                   turpis molestie, dictum est a, mattis tellus. Sed dignissim, &nbsp;
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
@@ -53,12 +53,12 @@ export default function Home() {
             </div>
           </div>
           {/* Right Column (shifted down) */}
-          <div className="flex flex-col gap-8 mt-20">
+          <div className="flex flex-col gap-8 md:gap-8 mt-20 md:mt-20 custom-gap-mobile custom-gap-mobile-right">
             {/* Card 2 */}
             <div className="bg-[#d9d9d9] h-120 rounded-lg shadow flex items-end min-w-0">
               <div className="bg-white rounded-lg shadow pl-2.5 pr-2.5 pb-2.5 pt-3 sm:pt-6 m-2.5 w-full h-45 flex flex-col min-w-0">
-                <h2 className="text-base font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
-                <p className="text-sm text-[#333] leading-relaxed custom-ellipsis">
+                <h2 className="text-[17px] font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
+                <p className="text-[15px] text-[#333] leading-relaxed custom-ellipsis">
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
                   turpis molestie, dictum est a, mattis tellus. Sed dignissim, &nbsp;
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
@@ -69,8 +69,8 @@ export default function Home() {
             {/* Card 4 */}
             <div className="bg-[#d9d9d9] h-120 rounded-lg shadow flex items-end min-w-0">
               <div className="bg-white rounded-lg shadow pl-2.5 pr-2.5 pb-2.5 pt-3 sm:pt-6 m-2.5 w-full h-45 flex flex-col min-w-0">
-                <h2 className="text-base font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
-                <p className="text-sm text-[#333] leading-relaxed custom-ellipsis">
+                <h2 className="text-[17px] font-bold mb-2 text-[#333] wrap-break-word">LOREM IPSUM</h2>
+                <p className="text-[15px] text-[#333] leading-relaxed custom-ellipsis">
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
                   turpis molestie, dictum est a, mattis tellus. Sed dignissim, &nbsp;
                   Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
@@ -172,6 +172,16 @@ export default function Home() {
             padding-right: 6px !important;
             padding-top: 3px !important;
             padding-bottom: 3px !important;
+          }
+        }
+        @media (max-width: 767px) {
+          /* Set same vertical gap for all stacked cards */
+          .custom-gap-mobile {
+            gap: 24px !important;
+          }
+          /* Remove extra margin-top from right column when stacked */
+          .custom-gap-mobile-right {
+            margin-top: 0 !important;
           }
         }
       `}</style>
